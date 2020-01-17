@@ -21,6 +21,6 @@ public class CucumberTest extends AbstractTestNGCucumberParallelTests  {
 	@AfterClass
 	public static void after() {
 		duration = System.currentTimeMillis() - duration;
-		System.out.println("DURATION - "+ duration);
+		System.out.println("DURATION -- "+ duration);
 	}
 }
