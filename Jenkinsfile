@@ -11,8 +11,7 @@ pipeline {
         	}
         }
         stage ('Install Stage Demo') {
-            steps {  
-            		bat 'env'              
+            steps {               
                     bat 'mvn install'            	
         	}
         }		
