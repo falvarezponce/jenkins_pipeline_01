@@ -23,7 +23,7 @@ pipeline {
     }
     
     environment {
-        EMAIL_TO = 'efalvarezp@indracompany.com'
+        EMAIL_TO = 'erick.candela@gmail.com'
     }
     
  	post {
