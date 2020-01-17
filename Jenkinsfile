@@ -5,14 +5,18 @@ pipeline {
     }   
      
     stages {
-        stage ('Compile Stage Demo') {
+        stage ('Compile Stage Clean') {
             steps {                
                     bat 'mvn clean'            	
         	}
         }
-        stage ('Install Stage Demo') {
-            steps {      
-            		bat 'set'         
+        stage ('Compile Stage Test') {
+            steps {                
+                    bat 'mvn test'            	
+        	}
+        }        
+        stage ('Install Stage Install') {
+            steps {         
                     bat 'mvn install'            	
         	}
         }		
